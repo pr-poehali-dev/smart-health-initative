@@ -1,7 +1,7 @@
 const navLinks = [
-  { href: "#features", label: "Возможности" },
-  { href: "#testimonials", label: "Отзывы" },
-  { href: "#pricing", label: "Участие" },
+  { href: "/dictionary", label: "Профессии" },
+  { href: "/upload", label: "Загрузить видео" },
+  { href: "/moderator", label: "Проверяющий" },
 ]
 
 export function Navbar() {
@@ -22,10 +22,10 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="#pricing"
+            href="/upload"
             className="ml-2 px-4 py-1.5 text-sm rounded-full bg-zinc-100 text-zinc-900 font-medium hover:bg-zinc-200 transition-colors"
           >
-            Подать заявку
+            Загрузить видео
           </a>
         </div>
       </nav>
