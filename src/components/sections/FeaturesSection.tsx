@@ -3,14 +3,14 @@ import { Zap, BarChart3, Layers, ArrowRight, Command } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const integrationLogos = [
-  { name: "Tool 1" },
-  { name: "Tool 2" },
-  { name: "Tool 3" },
-  { name: "Tool 4" },
-  { name: "Tool 5" },
-  { name: "Tool 6" },
-  { name: "Tool 7" },
-  { name: "Tool 8" },
+  { name: "Движение Первых" },
+  { name: "Школа №1" },
+  { name: "Школа №2" },
+  { name: "Школа №3" },
+  { name: "Движение Первых" },
+  { name: "Школа №1" },
+  { name: "Школа №2" },
+  { name: "Школа №3" },
 ]
 
 export function FeaturesSection() {
@@ -25,12 +25,12 @@ export function FeaturesSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <p className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Функции</p>
+          <p className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Возможности</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-zinc-100 mb-4">
-            Все для вашего успеха
+            Всё для профориентации нового поколения
           </h2>
           <p className="text-zinc-500 max-w-xl mx-auto text-balance">
-            Мощные инструменты, которые помогут выпускать продукты быстрее.
+            От загрузки первого видео до федерального масштабирования — ЛАБА сопровождает каждый шаг.
           </p>
         </motion.div>
 
@@ -53,10 +53,10 @@ export function FeaturesSection() {
                   >
                     <BarChart3 className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Дашборд в реальном времени</p>
+                  <p className="font-heading font-semibold text-zinc-100">Аналитика модератора</p>
                 </div>
                 <p className="text-zinc-500 text-sm mb-5">
-                  Отслеживайте важные метрики с настраиваемыми панелями.
+                  Следите за количеством загруженных видео, статусами проверок и активностью учеников в реальном времени.
                 </p>
                 <div className="rounded-xl border border-zinc-800 bg-zinc-950 p-4 overflow-hidden">
                   <div className="flex items-center justify-between mb-4">
@@ -74,7 +74,7 @@ export function FeaturesSection() {
                         transition={{ delay: 0.5 }}
                       >
                         <div className="w-2 h-2 rounded-full bg-zinc-400" />
-                        <span className="text-xs text-zinc-500">Пользователи</span>
+                        <span className="text-xs text-zinc-500">Ученики</span>
                       </motion.div>
                       <motion.div
                         className="flex items-center gap-1.5"
@@ -84,16 +84,16 @@ export function FeaturesSection() {
                         transition={{ delay: 0.6 }}
                       >
                         <div className="w-2 h-2 rounded-full bg-zinc-600" />
-                        <span className="text-xs text-zinc-500">Выручка</span>
+                        <span className="text-xs text-zinc-500">Видео</span>
                       </motion.div>
                     </div>
                   </div>
                   {/* Animated metrics row */}
                   <div className="grid grid-cols-3 gap-3 mb-4">
                     {[
-                      { label: "Пользователи", value: "12,4 тыс", change: "+12%" },
-                      { label: "Выручка", value: "4,8 млн ₽", change: "+8%" },
-                      { label: "Конверсия", value: "3,2%", change: "+2%" },
+                      { label: "Учеников", value: "1 240", change: "+12%" },
+                      { label: "Видео", value: "480", change: "+8%" },
+                      { label: "Одобрено", value: "94%", change: "+2%" },
                     ].map((metric, i) => (
                       <motion.div
                         key={metric.label}
@@ -162,9 +162,9 @@ export function FeaturesSection() {
                   >
                     <Zap className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Молниеносная скорость</p>
+                  <p className="font-heading font-semibold text-zinc-100">Быстрая модерация</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Оптимизировано для скорости на любом масштабе.</p>
+                <p className="text-zinc-500 text-sm mb-5">Проверяющий получает видео мгновенно и даёт обратную связь в один клик.</p>
                 <div className="mt-auto">
                   <div className="flex items-baseline gap-2 mb-3">
                     <motion.span
@@ -173,9 +173,9 @@ export function FeaturesSection() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                     >
-                      99.9%
+                      94%
                     </motion.span>
-                    <span className="text-zinc-500 text-sm">аптайм</span>
+                    <span className="text-zinc-500 text-sm">видео одобрено</span>
                   </div>
                   <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
                     <motion.div
@@ -208,11 +208,11 @@ export function FeaturesSection() {
                   >
                     <Command className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Сначала клавиатура</p>
+                  <p className="font-heading font-semibold text-zinc-100">Личный кабинет автора</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Любое действие на расстоянии одной клавиши.</p>
+                <p className="text-zinc-500 text-sm mb-5">Каждый ученик видит статус своих видео и получает уведомления о результатах.</p>
                 <div className="flex justify-center gap-2 mt-auto">
-                  {["Cmd", "K"].map((key, i) => (
+                  {["📹", "✅"].map((key, i) => (
                     <motion.div
                       key={key}
                       className="flex items-center justify-center w-12 h-12 rounded-xl bg-zinc-800/80 border border-zinc-700/50 shadow-lg"
@@ -252,9 +252,9 @@ export function FeaturesSection() {
                   >
                     <Layers className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">100+ интеграций</p>
+                  <p className="font-heading font-semibold text-zinc-100">Функция «Федерация»</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Подключайте инструменты, которыми пользуетесь ежедневно.</p>
+                <p className="text-zinc-500 text-sm mb-5">Масштабируйте платформу от одной школы до регионального и федерального уровня.</p>
                 <div className="grid grid-cols-8 gap-2 mt-auto">
                   {integrationLogos.map((logo, i) => (
                     <motion.div
